@@ -27,9 +27,9 @@ remove_residual_nvidia_packages:
 
 nvidia_installer_file:
   file.managed:
-    - name: /root/NVIDIA-Linux-x86_64-319.32.run
-    - source: http://us.download.nvidia.com/XFree86/Linux-x86_64/319.32/NVIDIA-Linux-x86_64-319.32.run
-    - source_hash: md5=608767a3e1bee8a030f31cdc9251182e
+    - name: /root/NVIDIA-Linux-x86_64-310.14.run
+    - source: http://us.download.nvidia.com/XFree86/Linux-x86_64/310.14/NVIDIA-Linux-x86_64-310.14.run
+    - source_hash: md5=347ffd1c88e57476d26dfd0e36584acc
     - mode: 755
     - require:
       - cmd: remove_residual_nvidia_packages
